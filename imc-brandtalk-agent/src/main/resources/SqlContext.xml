@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<description>IMC Brandtalk Agent DDL/DML</description>
+	
+	<!-- Import DDL -->
+	<import resource="sql/${spring.datasource.platform}/DDL-ImcBtList-${spring.datasource.platform}.xml" />
+
+	<!-- Import DML -->
+	<import resource="sql/${spring.datasource.platform}/DML-ImcBtCampaign-${spring.datasource.platform}.xml" />
+	<import resource="sql/${spring.datasource.platform}/DML-ImcBtList-${spring.datasource.platform}.xml" />
+	<import resource="sql/${spring.datasource.platform}/DML-ImcBtRequest-${spring.datasource.platform}.xml" />
+	<import resource="sql/${spring.datasource.platform}/DML-ImcBtListLog-${spring.datasource.platform}.xml"/>
+
+</beans>
