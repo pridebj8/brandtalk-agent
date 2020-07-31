@@ -26,7 +26,6 @@ public class ImcAgentConfig {
 	private String			reportApiHost;
 	private String			clientId;
 	private String			apiKey;
-	
 	private String			senderCode;
 	
 	private String			bizMsgSenderKey;
@@ -36,5 +35,10 @@ public class ImcAgentConfig {
 	private List<String>	bizMsgEtcColumnList;
 	private boolean			bizMsgUseKoreaCountyCode;
 	private String			btBizMsgResendMethod;
+	
+	private int				bundleCount;
+	
+	private String			tableNameBtList;
+	private String			tableNameBtListLog;
 
 }
